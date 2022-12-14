@@ -17,6 +17,7 @@ export const TestimonyGridContainer = () => {
           title="Hear what they say about us."
           />
         <TestimonyVideo/>
+        <TestimonialSlider/>
         </Box>
         <TestimonialGrid/>
         <Box

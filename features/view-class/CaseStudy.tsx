@@ -8,13 +8,25 @@ export const CaseStudy = () => {
     backgroundColor={"#1E1E1E"}
     px={{ base: 4, md: 32 }}
     py={{ base: 20, md: 14 }}
+    position="relative"
     >
+    <Box
+    position={'absolute'}
+    top={0}
+    left={0}
+    zIndex={1}
+    >
+        <Image src="assets/images/class-work/purpleBg.png" alt="bg" />
+    </Box>
         <Box
         w="full"
+        position={'relative'}
+        zIndex={2}
         >
             <Image src={"/assets/images/class-work/classwork1.png"} alt="classwork"/>
         </Box>
-        <SimpleGrid columns={{base: 1, md: 2}} spacing={20} my={16} py={4}> 
+        <SimpleGrid  position={'relative'}
+        zIndex={2} columns={{base: 1, md: 2}} spacing={20} my={16} py={4}> 
             {
                 workDetails[0].content1.map((item, index) => {
                     return (
@@ -28,7 +40,8 @@ export const CaseStudy = () => {
                 })
             }
         </SimpleGrid>
-        <Box>
+        <Box  position={'relative'}
+        zIndex={2}>
             <Image src={"/assets/images/class-work/classwork2.png"} alt="classwork"/>
         </Box>
         <SimpleGrid columns={{base: 1, md: 2}} spacing={20} my={16} px={4}>

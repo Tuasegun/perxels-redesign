@@ -21,6 +21,7 @@ export const CaseHero = () => {
       p={{ base: '20 4', md: '5.25rem 6.35rem' }}
       pos="relative"
     >
+      
       <Flex
         flexDirection={{ base: 'column-reverse', md: 'row' }}
         justifyContent="space-between"
